@@ -1,0 +1,83 @@
+!URxvt*scrollstyle:  plain
+URxvt.scrollBar:  False
+
+! -- Fonts -- !
+URxvt.font:xft:Monospace:pixelsize=15
+URxvt.boldfont:xft:Monospace-Bold:pixelsize=15
+
+!-- Xft settings -- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+!URxvt*utf8:               1
+URxvt*termName: rxvt-unicode
+
+URxvt*foreground: #dedede
+URxvt*background: #000000
+
+! black
+URxvt*color0  : #000000
+URxvt*color8  : #555753
+! red
+URxvt*color1  : #cc0000
+URxvt*color9  : #ef2929
+! green
+URxvt*color2  : #4e9a06
+URxvt*color10 : #8ae234
+! yellow
+URxvt*color3  : #c4a000
+URxvt*color11 : #fce94f
+! blue
+URxvt*color4  : #3465a4
+URxvt*color12 : #729fcf
+! magenta
+URxvt*color5  : #75507b
+URxvt*color13 : #ad7fa8
+! cyan
+URxvt*color6  : #06989a
+URxvt*color14 : #34e2e2
+! white
+URxvt*color7: #dedede
+!URxvt*color7  : #d3d7cf
+!URxvt*color7  : #727778
+!URxvt*color7  : #000000
+URxvt*color15 : #eeeeec
+
+!URxvt*reverseVideo: True
+
+URxvt*saveLines : 2048
+
+URxvt.keysym.Control-Up:    \033[1;5A
+URxvt.keysym.Control-Down:  \033[1;5B
+URxvt.keysym.Control-Left:  \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
+
+URxvt.keysym.Control-1: command:\033]710;xft:DejaVu Sans Mono:pixelsize=11:antialias=true\007\033]711;xft:DejaVu Sans Mono:Bold:pixelsize=11:antialias=true\007
+URxvt.keysym.Control-2: command:\033]710;xft:DejaVu Sans Mono:pixelsize=18:antialias=true\007\033]711;xft:DejaVu Sans Mono:Bold:pixelsize=18:antialias=true\007
+URxvt.keysym.Control-3: command:\033]710;xft:DejaVu Sans Mono:pixelsize=28:antialias=true\007\033]711;xft:DejaVu Sans Mono:Bold:pixelsize=28:antialias=true\007
+!URxvt.keysym.Control-1: command:\033]710;xft:Terminus:pixelsize=10:antialias=false\007\033]711;xft:Terminus:Bold:pixelsize=10:antialias=false\007
+!URxvt.keysym.Control-2: command:\033]710;xft:Terminus:pixelsize=14:antialias=false\007\033]711;xft:Terminus:Bold:pixelsize=14:antialias=false\007
+!URxvt.keysym.Control-3: command:\033]710;xft:Terminus:pixelsize=18:antialias=false\007\033]711;xft:Terminus:Bold:pixelsize=18:antialias=false\007
+!URxvt.keysym.Control-4: command:\033]710;xft:Terminus:Bold:pixelsize=20:antialias=false\007\033]711;xft:Terminus:Bold:pixelsize=20:antialias=false\007
+!URxvt.keysym.Control-5: command:\033]710;xft:Terminus:Bold:pixelsize=28:antialias=false\007\033]711;xft:Terminus:Bold:pixelsize=28:antialias=false\007
+
+URxvt.transparent:   true
+URxvt.shading:       20
+
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+! "Color scheme for normal row" Set from: File
+rofi.color-normal:                   argb:0383c4a, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
+! "Color scheme for urgent row" Set from: File
+rofi.color-urgent:                   argb:02d303b, #cc6666, argb:e52d303b, #a54242, #f9f9f9
+! "Color scheme for active row" Set from: File
+rofi.color-active:                   argb:02d303b, #b5bd68, argb:e42d303b, #8c9440, #f9f9f9
+! "Color scheme window" Set from: File
+rofi.color-window:                   argb:f22d303b, #7c8389, #1d1f21
+! "Separator style (none, dash, solid)" Set from: XResources
+rofi.separator-style:                solid

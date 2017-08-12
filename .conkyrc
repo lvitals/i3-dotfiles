@@ -50,7 +50,7 @@ gap_y 0
 
 TEXT
 ${voffset 20}
-#${goto 700}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -148}${time %A}${font}
-${goto 150}${color EAEAEA}${font Ubuntu:pixelsize=100}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font Conviction:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font Conviction:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font Conviction:pixelsize=58}${offset -100}${time %A}${font}
-${goto 135}${voffset 20}${offset 15}${font Ubuntu:pixelsize=12}${color FFA300}HD ${offset 9}${color FFFFFF}${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}${color FFFFFF}$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}${color FFFFFF}${cpu cpu0}%
+#${goto 700}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color 428BCA}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -148}${time %A}${font}
+${goto 150}${color EAEAEA}${font Ubuntu:pixelsize=100}${time %H:%M}${font}${voffset -84}${offset 10}${color 428BCA}${font Conviction:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font Conviction:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font Conviction:pixelsize=58}${offset -100}${time %A}${font}
+${goto 135}${voffset 20}${offset 15}${font Ubuntu:pixelsize=12}${color 428BCA}HD ${offset 9}${color FFFFFF}${fs_free /} / ${fs_size /}${offset 30}${color 428BCA}RAM ${offset 9}${color FFFFFF}$mem / $memmax${offset 30}${color 428BCA}CPU ${offset 9}${color FFFFFF}${cpu cpu0}%
 ${voffset 900}

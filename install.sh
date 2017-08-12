@@ -8,3 +8,4 @@ cp .Xresources ~/
 cp .i3status.conf ~/
 cp -R gtk-3.0 ~/.config/
 cp .gtkrc-2.0 ~/
+cp .conkyrc ~/

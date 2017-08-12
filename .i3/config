@@ -201,8 +201,10 @@ for_window [class="^.*"] border pixel 4
 exec --no-startup-id nm-applet &
 
 # compositing enable
-#exec xcompmgr -c -f -n
 exec compton -b --config ~/.config/compton.conf
+
+# start conky
+exec --no-startup-id conky &
 
 # start rofi (a program launcher)
 #bindsym Mod1+d exec --no-startup-id "rofi -location 2 -yoffset -2 -bw 2 -show run"

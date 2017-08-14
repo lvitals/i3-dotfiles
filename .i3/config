@@ -17,7 +17,7 @@
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 10
 
-# install fontawesome-fonts
+# dnf install fontawesome-fonts or apt install fonts-font-awesome
 # font for window titles. ISO 10646 = Unicode
 font pango: M+ 1m, FontAwesome, Ionicons, 10
 

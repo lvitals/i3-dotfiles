@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# hlwmexit
+
+DMENU='dmenu -fn Terminus-10 -nb #2B2C2B -nf #F9FAF9 -sb #285E8E -sf #F9FAF9 -p run:'
+choice=$(echo -e "lock\nlogout\nswitch\nsuspend\nhibernate\nreboot\nshutdown" | $DMENU)
+
+lock() {
+    ~/.i3/ob_blurlock &
+}
+
+case "$choice" in
+    lock) lock ;;
+    logout) i3-msg exit & ;;
+    switch) dm-tool switch-to-greeter & ;;
+    suspend) lock && systemctl suspend & ;;
+    hibernate) lock && systemctl hibernate & ;;
+    reboot) systemctl reboot & ;;
+    shutdown) systemctl poweroff & ;;
+esac
+

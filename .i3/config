@@ -139,7 +139,8 @@ bindsym Mod1+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod1+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym Mod1+Shift+e exec "~/.i3/hlwmexit"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -158,7 +159,7 @@ mode "resize" {
         bindsym Left        resize shrink width 10 px or 10 ppt
         bindsym Down        resize grow height 10 px or 10 ppt
         bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym Right       resize gro~/.i3/ob_blurlockw width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -226,10 +227,7 @@ bindsym XF86TouchpadToggle exec synclient TouchpadOff=$((`synclient -l | grep To
 
 # screensaver
 exec --no-startup-id xset dpms 600
-exec --no-startup-id xautolock -time 10 -locker ~/.i3/lock
-
-# loock screen
-bindsym Mod1+z exec --no-startup-id ~/.i3/lock
+exec --no-startup-id xautolock -time 10 -locker ~/.i3/ob_blurlock
 
 # sound config pulseaudio
 bindsym Mod1+p exec --no-startup-id /usr/bin/pavucontrol

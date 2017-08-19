@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eu
+
+~/.i3/volumectl list-sinks | awk '{print $1" | "$2}' | dmenu -l 10 -i "$@" | awk '{print $1}' | xargs ~/.i3/volumectl set-sink

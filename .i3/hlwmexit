@@ -2,7 +2,7 @@
 
 # hlwmexit
 
-DMENU='dmenu -fn Terminus-10 -nb #2B2C2B -nf #F9FAF9 -sb #285E8E -sf #F9FAF9 -p run:'
+DMENU='dmenu -fn Terminus-11 -nb #2B2C2B -nf #F9FAF9 -sb #285E8E -sf #F9FAF9 -p run:'
 choice=$(echo -e "lock\nlogout\nswitch\nsuspend\nhibernate\nreboot\nshutdown" | $DMENU)
 
 lock() {

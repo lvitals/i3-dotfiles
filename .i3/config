@@ -231,3 +231,6 @@ exec --no-startup-id xautolock -time 10 -locker ~/.i3/ob_blurlock
 
 # sound config pulseaudio
 bindsym Mod1+p exec --no-startup-id /usr/bin/pavucontrol
+
+# sound set pulseaudio
+bindsym Mod1+z exec --no-startup-id ~/.i3/sinkpicker

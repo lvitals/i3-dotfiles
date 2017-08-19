@@ -1,4 +1,15 @@
 #!/bin/bash
 set -eu
 
-~/.i3/volumectl list-sinks | awk '{print $1" | "$2}' | dmenu -l 10 -i "$@" | awk '{print $1}' | xargs ~/.i3/volumectl set-sink
+list-sinks() {
+   echo pactl list short sinks
+}
+
+set_sink() {
+    if [[ $(type -P paswitch) ]] 
+        then paswitch $1 
+    fi        
+    pactl set-default-sink $1
+}
+
+`list-sinks` | awk '{print $1" | "$2}' | dmenu -l 10 -i "$@" | awk '{print $1}'  | xargs -n1 -P2 -i bash -c "$(declare -f) ; set_sink {}"

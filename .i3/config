@@ -192,8 +192,9 @@ for_window [class="[.]*"] floating enable
 # browser pop-ups
 for_window [window_role="pop-up"] floating enable
 
-# wallpaper radom
-exec --no-startup-id feh --randomize --bg-fill ~/Imagens/Wallpapers/*
+# wallpaper feh or nitrogen
+#exec --no-startup-id feh --randomize --bg-fill ~/Imagens/Wallpapers/*
+exec nitrogen --restore
 
 # remove title to window
 for_window [class="^.*"] border pixel 4

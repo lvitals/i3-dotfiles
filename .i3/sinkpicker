@@ -12,4 +12,4 @@ set_sink() {
     pactl set-default-sink $1
 }
 
-`list-sinks` | awk '{print $1" | "$2}' | dmenu -l 10 -i "$@" | awk '{print $1}'  | xargs -n1 -P2 -i bash -c "$(declare -f) ; set_sink {}"
+`list-sinks` | awk '{print $1" | "$2}' | dmenu -fn Terminus-10 -nb '#2B2C2B' -nf '#F9FAF9' -sb '#285E8E' -sf '#F9FAF9' -l 10 -i "$@" | awk '{print $1}'  | xargs -n1 -P2 -i bash -c "$(declare -f) ; set_sink {}"
